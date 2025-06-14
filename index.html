@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 학습 일지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>📝 Back's AI 일지</h1>
+        <form id="log-form">
+            <input type="text" id="subject-input" placeholder="학습 과목 (예: 코딩, 영어)" required>
+            <textarea id="content-input" placeholder="학습 내용 (예: HTML 기본 문법 공부)" required></textarea>
+            <input type="number" id="time-input" placeholder="학습 시간 (분 단위)">
+            <button type="submit">기록하기</button>
+        </form>
+        <div class="log-list-header">
+            <h2>학습 기록</h2>
+        </div>
+        <ul id="log-list">
+            </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
